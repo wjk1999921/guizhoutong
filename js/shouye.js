@@ -1,5 +1,12 @@
 $(function(){
 //首页
+//下拉菜单
+	$("#proudct").mouseenter(function(){
+		$(this).find("ul").show();
+	})
+	$("#proudct").mouseleave(function(){
+		$(this).find("ul").hide();
+	})
 //	二维码
 	$(".icon-weixin").mouseenter(function(){
 		$(".ycewm").show();
@@ -65,41 +72,14 @@ $(function(){
 	$(".small_video").click(function(){
 		$(".small_video").hide();
 	})
-// 闪现的效果
-//	$(".jiantou>div").click(function(){
-//  		console.log("1111");
-//  		$(".sxlunbo_con>div").eq($(".sxlunbo_con>div").index()).addClass("carousel").siblings("div").removeClass("carousel");
-////  	console.log($(".sxlunbo_con>div").index());
-////  	$(".sxlunbo_con>div").eq(0).addClass("carousel").siblings("div").removeClass("carousel");
-//	})
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+// 闪现的效果		
 	$(".left_arrow").click(function(){
     		console.log("1111");
-//$("li").before(newLi);
     	$(".qiehuan1").eq(0).before($(".qiehuan1:eq(1)"));
-//	$(".seclected2").
 	})
 	$(".right_arrow").click(function(){
 		console.log($(".qiehuan1:eq(1)"));
 		$(".qiehuan1").eq(0).before($(".qiehuan1:eq(1)"));
-//  	$(".sxlunbo_con>div").eq(1).addClass("carousel").siblings("div").removeClass("carousel");
 	})
 
 
